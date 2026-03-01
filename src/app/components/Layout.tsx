@@ -1,4 +1,3 @@
-import image_43f8056f267f17ad0fc867e6333bcc42dccf0cc6 from 'figma:asset/43f8056f267f17ad0fc867e6333bcc42dccf0cc6.png'
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router';
 import { Menu, X, Globe, Shield, ChevronRight } from 'lucide-react';
@@ -35,8 +34,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
-              <img src={image_43f8056f267f17ad0fc867e6333bcc42dccf0cc6} alt="DeSpread" className="w-[30px] h-[30px] object-contain m-[120px]" />
+            <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center overflow-hidden">
+              <img src="/logo.png" alt="DeSpread" className="w-full h-full object-contain" />
             </div>
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400 font-sans tracking-tight text-[#5d007a00] text-[24px] font-bold">
               DeSpread
@@ -126,8 +125,8 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-violet-600 to-indigo-600 rounded-lg flex items-center justify-center">
-                <img src={image_43f8056f267f17ad0fc867e6333bcc42dccf0cc6} alt="DeSpread" className="w-6 h-6 object-contain brightness-0 invert" />
+              <div className="w-8 h-8 bg-gradient-to-br from-violet-600 to-indigo-600 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="/logo.png" alt="DeSpread" className="w-6 h-6 object-contain brightness-0 invert" />
               </div>
               <span className="text-xl font-bold text-white">DeSpread</span>
             </div>
